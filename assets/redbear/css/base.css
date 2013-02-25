@@ -66,9 +66,9 @@ footer {
     background-repeat: no-repeat;
 }
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
-    color: #666;
+    color: dimgray;
 }
 
 .post_header .muted {
@@ -78,4 +78,21 @@ h1 {
 
 .muted a {
     color: #808080;
+}
+
+li {
+    line-height: 25px;
+}
+
+ul, ol {
+    margin-bottom: 30px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    margin-bottom: 30px;
+}
+
+dd {
+    margin-bottom: 10px;
 }
