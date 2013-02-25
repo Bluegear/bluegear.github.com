@@ -39,7 +39,7 @@
     <div class="container narrow content">
         <div class="row">
             <div class="span9">
-<p>Sometimes life as a Scrum Master can be difficult. An advice can be easily interpreted to an order or even an uncontructive word. So I invented a card game that can help team members to sit and enjoy a good time together with a fun card game which they can learn more about Scrum without the real life pain.</p>
+<p>Sometimes life as a Scrum Master can be difficult. An advice can be easily interpreted to an order or even an uncontructive word. So I invented a card game that can help team members to sit and enjoy a good time together with a fun card game which they can learn more about Scrum without any real life pain.</p>
 <h3>Rules:</h3>
 <ol>
 <li>Player who can burn all <strong>Story Cards</strong> at the end of the sprint is the winner.</li>
@@ -49,10 +49,136 @@
 <li>All players have to draw at least 5 <strong>Story Cards</strong> randomly at their first turn (Sprint Planning Turn). Number of cards can be added depends on player's decision.</li>
 <li>Each <strong>Story Card</strong> has a predefined set of <strong>Business Point</strong> and <strong>Story Point</strong>.</li>
 <li>Player will earn 5 <strong>Burn down Point</strong> for every single turn except the first turn. They can use <strong>Burn down Point</strong> to burn <strong>Story Cards</strong> or use it to buy an <strong>Action Card</strong>.</li>
-<li>Player can use their <strong>Burn down Point</strong> to draw an <strong>Action Card</strong> at the start of each turn. Buying an <strong>Action Card</strong> after drawing a <strong>Scenario Card</strong> is not allowed.</li>
-<li>Each turn player have to draw a <strong>Scenario Card</strong>. This kind of card effect their <strong>Story Point</strong> and <strong>Business Point</strong>. </li>
-<li>Player can use an <strong>Action Card</strong> to prevent a bad effect from a <strong>Scenario Card</strong>.</li>
+<li>Player can use their <strong>Burn down Point</strong> to draw an <strong>Action Card</strong> at the start of each turn. <strong>Action Card</strong> can prevent a bad effect from a <strong>Scenario Card</strong>. Buying an <strong>Action Card</strong> after drawing a <strong>Scenario Card</strong> is not allowed.</li>
+<li>Each turn player have to draw a <strong>Scenario Card</strong>. This kind of card effect their <strong>Story Point</strong> and may require player to draw another card.</li>
+<li>Each turn players have to select their working <strong>Story Card</strong>. Some <strong>Scenario Card</strong> will effect only working <strong>Story Card</strong>. If no <strong>Story Card</strong> selected an effect from <strong>Scenario Card</strong> would be void and they can not burn any <strong>Story Point</strong> in that turn.</li>
+<li>Players have to perform a <strong>Mid Sprint Turn</strong> at the 4th turn of seven days sprint or the 7th turn of fourteen days sprint. In this turn their <strong>Burn down Point</strong> will be reduced by 2. Players can return any number of <strong>Story Card</strong> in this turn. Returned story won't give any <strong>Business Point</strong>.</li>
 </ol>
+<h4>Multi Sprints game</h4>
+<ol>
+<li>Rules for multi sprints are exactly the same with single sprint game except the score calculation will be performed at the end of the last sprint.</li>
+<li>Unfinished card have to be added to the next sprint's backlog with all remaining <strong>Story Point</strong></li>
+<li>Unused <strong>Action Card</strong> also remain in the next sprint.</li>
+<li>For a players who has closed all <strong>Story Card</strong> in the current sprint and still have some turns left. In this case players has an option to use their point to buy an <strong>Action Card</strong> each turn to prepare for the next sprint. They also has an option to draw or not draw a <strong>Scenario Card</strong> each turn as well.</li>
+</ol>
+<h3>Card's Description</h3>
+<h4>Story Card</h4>
+<p>A story card represent User's Story in real scrum process. It's consist of predefined <strong>Business Point</strong> and <strong>Story Point</strong>. Players can not choose their story cards but they're free to accept any number of cards in each <strong>Sprint Planning Turn</strong> and they can return any number of cards at the <strong>Mid Sprint Turn</strong>.</p>
+<h4>Scenario Card</h4>
+<p>A scenario card represent a real situation in software development process. Some are good, more are bad. Each card may has good and bad effect to the <strong>Burn down Point</strong>. Some card may require player to draw another <strong>Story Card</strong> or <strong>Scenario Card</strong>. Same like a surprise feature that can either introduce new bugs, require more work or adding more business value at the same time.</p>
+<h4>Action Card</h4>
+<p>Action card represent an effort of a team member who try to make his/her every day job smoother and easier. Action card can prevent or reduce a bad effect of a <strong>Scenario Card</strong>. Some can also boots your <strong>Burn down Point</strong> which will last long to the end of the game.</p>
+<h3>Card table</h3>
+<h4>Scenario Card</h4>
+<table>
+<thead>
+<tr>
+<th>Description</th>
+<th>Effects</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Just a boring day.</td>
+<td>No effect.</td>
+</tr>
+<tr>
+<td>Job well done!</td>
+<td>Add 1 <strong>Burn down Point</strong> to the current turn.</td>
+</tr>
+<tr>
+<td>Double performance!!</td>
+<td>Multiply the rest <strong>Burn down Point</strong> by two just for the current turn.</td>
+</tr>
+<tr>
+<td>Burn them all!!!</td>
+<td>Clear current <strong>Story Card</strong> free. Have to use with <strong>Action Card: Well Plan</strong>.</td>
+</tr>
+<tr>
+<td>Under estimate.</td>
+<td>Add 2 <strong>Story Point</strong> to a working <strong>Story Card</strong>.</td>
+</tr>
+<tr>
+<td>Over estimate.</td>
+<td>Reduce 2 <strong>Story Point</strong> from a working <strong>Story Card</strong>.</td>
+</tr>
+<tr>
+<td>Unexpected Meeting.</td>
+<td>Reduce 2 <strong>Burn down Point</strong>.</td>
+</tr>
+<tr>
+<td>Sick.</td>
+<td>Reduce 3 <strong>Burn down Point</strong>.</td>
+</tr>
+<tr>
+<td>Git issue.</td>
+<td>Reduce 3 <strong>Burn down Point</strong>.</td>
+</tr>
+<tr>
+<td>Wait.</td>
+<td>Working <strong>Story Card</strong> is freezed for 2 turn. Players can select a new working <strong>Story Card</strong> and start burn new card at the same turn.</td>
+</tr>
+<tr>
+<td>Bug.</td>
+<td>Add 1 <strong>Story Point</strong> to any <strong>Story Card</strong>, Draw a <strong>Scenario Card</strong>.</td>
+</tr>
+<tr>
+<td>Surprise Story.</td>
+<td>Draw a <strong>Story Card</strong>. Reduce <strong>Business Point</strong> of the new card by 50%.</td>
+</tr>
+<tr>
+<td>Missile!</td>
+<td>Draw a <strong>Story Card</strong>, Reduce <strong>Burn down Point</strong> by 2.</td>
+</tr>
+<tr>
+<td>Dependency</td>
+<td>Swap working <strong>Story Card</strong> with another card. If no card to swap then this story will be freezed until the end of the sprint.</td>
+</tr>
+<tr>
+<td>Initiative.</td>
+<td>Reduce 1 <strong>Burn down Point</strong>, Draw a <strong>Story Card</strong>, Draw a <strong>Scenario Card</strong>.</td>
+</tr>
+<tr>
+<td>Stand up pay back.</td>
+<td>Clear all freezed <strong>Story Card</strong></td>
+</tr>
+</tbody>
+</table>
+<h4>Action Card</h4>
+<table>
+<thead>
+<tr>
+<th>Description</th>
+<th>Effects</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Well Collaborative.</td>
+<td>Clear all freezed <strong>Story Cards</strong> at once.</td>
+</tr>
+<tr>
+<td>Do it tomorrow.</td>
+<td>Push a <strong>Story Card</strong> to the next sprint. For the last sprint or a single sprint game simply return a <strong>Story Card</strong> to the deck.</td>
+</tr>
+<tr>
+<td>Pair Programming.</td>
+<td>Recover 2 <strong>Burn down Point</strong> from <strong>Scenario Card: Unexpected Meeting, Sick</strong></td>
+</tr>
+<tr>
+<td>Good Convention.</td>
+<td>Recover 1 <strong>Burn down Point</strong> from a <strong>Scenario Card: Sick, Unexpected meeting</strong> or Eliminate a <strong>Scenario Card: Git issue</strong> or use it to burn 1 <strong>Story Point</strong>.</td>
+</tr>
+<tr>
+<td>Best Practice.</td>
+<td>Add 1 <strong>Burn down Point</strong> every turn start from the next turn until the end of the game.</td>
+</tr>
+<tr>
+<td>Well plan</td>
+<td>Clear 1 <strong>Story Card</strong> free. Have to use with <strong>Scenario Card: Burn them all!!!</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
         </div>
         <div class="row page_nav">
